@@ -94,6 +94,7 @@ body {
 
 .about-text {
     flex: 1;
+    margin: 1rem 30rem 1rem 30rem;
 }
 
 .about-text h2 {
@@ -175,6 +176,9 @@ body {
     h1 {
       font-size: 2rem; /* Adjust font size for smaller screens */
     }
+    .about-text {
+        margin: 1rem 5rem 1rem 5rem;
+    }
     .orchid-text {
         margin: 1rem 4rem 1rem 1rem;
         padding: 1rem;
@@ -190,6 +194,9 @@ body {
     h1 {
       font-size: 2.5rem; /* Adjust font size */
     }
+    .about-text {
+        margin: 1rem 10rem 1rem 10rem;
+    }
     .orchid-text {
         margin: 1rem 6rem 1rem 2rem;
         padding: 1rem;
@@ -204,6 +211,9 @@ body {
     }
     h1 {
       font-size: 3rem; /* Font size for medium screens */
+    }
+    .about-text {
+        margin: 1rem 15rem 1rem 15rem;
     }
     .orchid-text {
         margin: 1rem 10rem 1rem 4rem;
