@@ -101,7 +101,19 @@ body {
 .orchid-section h2 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.orchid-tab {
+    padding-bottom: 6rem;
+}
+
+.orchid-text {
+    margin: 1rem 20rem 1rem 20rem;
+    padding: 1rem;
+    text-align: justify;
+    background-color: rgba(0, 128, 0, 0.8);
+    border-radius: 2rem;
 }
 
 .orchid-gallery {
@@ -111,11 +123,20 @@ body {
 }
 
 .orchid-card {
-    height: 150px;
-    background: url('https://via.placeholder.com/200') no-repeat center center/cover;
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    /* You can adjust this height as needed */
+    background: url('https://via.placeholder.com/200') no-repeat center center/contain;
+    /* Change size behavior */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-size: contain;
+    /* Ensure images scale down proportionally */
+    background-color: #f4f4f4;
+    /* Add a background color in case of transparent areas */
 }
+
 
 /* Footer Section */
 .footer {
