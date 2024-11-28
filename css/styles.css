@@ -23,31 +23,47 @@ body {
 }
 
 .navbar {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Spread title and nav links */
+    align-items: center; /* Initially align items to center */
+    padding: 1rem;
+  }
+  
+  .nav-links {
     display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-}
-
-.nav-links {
+    gap: 2rem; /* Space out navigation links */
     list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.nav-links a {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
     text-decoration: none;
-    color: black;
+    font-size: 1rem;
     font-weight: bold;
-    transition: color 0.3s;
-}
+    color: black;
+  }
+  
+  .navbar h1 {
+    font-size: 2rem; /* Larger font for title */
+    line-height: 1; /* Adjust line height to align */
+    margin: 0; /* Remove default margins */
+    display: inline-block; /* Prevent unwanted spacing */
+    vertical-align: baseline; /* Ensure baseline alignment */
+  }
+  
+  .nav-links a {
+    line-height: 1; /* Ensure links match the title's baseline */
+  }
+  
 
 .nav-links a:hover {
-    color: darkgreen;
+    color: rgb(10, 140, 75);
 }
 
 /* Hero Section */
 .hero-section {
-    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,15 +71,17 @@ body {
     text-align: center;
 }
 
-.hero-section h1 {
-    font-size: 3rem;
-    color: darkgreen;
+.hero-section img {
+    max-width: 100vw;
+    max-height: auto;
 }
 
 /* About Section */
 .about-section {
     padding: 4rem 2rem;
     background: #f9f9f9;
+    justify-items: center;
+    align-content: center;
 }
 
 .about-container {
@@ -71,12 +89,7 @@ body {
     flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
-}
-
-.about-image {
-    flex: 1;
-    height: 250px;
-    background: url('https://via.placeholder.com/400') no-repeat center center/cover;
+    align-self: center;
 }
 
 .about-text {
@@ -109,10 +122,12 @@ body {
 }
 
 .orchid-text {
-    margin: 1rem 20rem 1rem 20rem;
-    padding: 1rem;
+    width: 42vw;
+    height: 56vh;
+    margin: 1rem 14rem 1rem 6rem;
+    padding: 2rem;
     text-align: justify;
-    background-color: rgba(0, 128, 0, 0.8);
+    background-color: rgba(10, 140, 75, 0.5);
     border-radius: 2rem;
 }
 
@@ -148,6 +163,51 @@ body {
 
 /* Responsive Navigation Scroll */
 .scrolled {
-    background-color: rgba(0, 128, 0, 0.8);
+    background-color: rgba(10, 140, 75, 0.8);
     color: white;
 }
+
+/* For small screens like phones */
+@media (max-width: 576px) {
+    .hero {
+      height: 50vh; /* Reduce the hero section height on smaller screens */
+    }
+    h1 {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+    .orchid-text {
+        margin: 1rem 4rem 1rem 1rem;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+  }
+  
+  /* For medium screens like tablets in portrait mode or small desktops */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .hero {
+      height: 60vh; /* Adjust the hero section height */
+    }
+    h1 {
+      font-size: 2.5rem; /* Adjust font size */
+    }
+    .orchid-text {
+        margin: 1rem 6rem 1rem 2rem;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+  }
+  
+  /* For large screens like larger tablets or desktops */
+  @media (min-width: 769px) and (max-width: 992px) {
+    .hero {
+      height: 70vh; /* Adjust the hero section height */
+    }
+    h1 {
+      font-size: 3rem; /* Font size for medium screens */
+    }
+    .orchid-text {
+        margin: 1rem 10rem 1rem 4rem;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+  }
