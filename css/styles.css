@@ -181,8 +181,8 @@ model-viewer {
     .hero {
       height: 50vh; /* Reduce the hero section height on smaller screens */
     }
-    h1 {
-      font-size: 1px; /* Adjust font size for smaller screens */
+    .navbar h1 {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
     .about-section {
       padding: 1rem;
