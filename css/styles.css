@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    font-size: 1rem;
 }
 
 body {
@@ -110,6 +111,8 @@ body {
 /* Orchids Section */
 .orchid-section {
     padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .orchid-section h2 {
@@ -120,11 +123,13 @@ body {
 
 .orchid-tab {
     padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .orchid-text {
     width: 42vw;
-    height: 56vh;
+    height: auto;
     margin: 1rem 14rem 1rem 6rem;
     padding: 2rem;
     text-align: justify;
@@ -132,27 +137,21 @@ body {
     border-radius: 2rem;
 }
 
+model-viewer {
+  height: 300px;
+  width: auto;
+}
+
 .orchid-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.orchid-card {
-    height: auto;
-    width: auto;
-    max-height: 300px;
-    /* You can adjust this height as needed */
-    background: url('https://via.placeholder.com/200') no-repeat center center/contain;
-    /* Change size behavior */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-size: contain;
-    /* Ensure images scale down proportionally */
-    background-color: #f4f4f4;
-    /* Add a background color in case of transparent areas */
+img {
+  height: 300px;
+  width: auto;
 }
-
 
 /* Footer Section */
 .footer {
@@ -176,14 +175,28 @@ body {
     h1 {
       font-size: 2rem; /* Adjust font size for smaller screens */
     }
+    .about-section {
+      padding: 1rem;
+    }
     .about-text {
-        margin: 1rem 5rem 1rem 5rem;
+        margin: 1rem 1rem 1rem 1rem;
     }
     .orchid-text {
+      width: 70vw;
+      height: auto;
         margin: 1rem 4rem 1rem 1rem;
         padding: 1rem;
         border-radius: 2rem;
     }
+    .orchid-gallery {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  img {
+  width: auto;
+  height: 50%;
+}
   }
   
   /* For medium screens like tablets in portrait mode or small desktops */
@@ -194,14 +207,29 @@ body {
     h1 {
       font-size: 2.5rem; /* Adjust font size */
     }
-    .about-text {
-        margin: 1rem 10rem 1rem 10rem;
+    .about-section {
+      padding: 1rem;
     }
+    .about-text {
+        margin: 1rem 2rem 1rem 2rem;
+    }
+  
     .orchid-text {
+      width: 80vw;
+      height: auto;
         margin: 1rem 6rem 1rem 2rem;
         padding: 1rem;
         border-radius: 2rem;
     }
+    .orchid-gallery {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  img {
+  width: auto;
+  height: 50%;
+}
   }
   
   /* For large screens like larger tablets or desktops */
