@@ -70,6 +70,7 @@ body {
     align-items: center;
     background: linear-gradient(to bottom, #e0f7fa, #ffffff);
     text-align: center;
+    padding-top: 50px;
 }
 
 .hero-section img {
@@ -127,12 +128,13 @@ body {
     padding-bottom: 6rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .orchid-text {
     width: 42vw;
     height: auto;
-    margin: 1rem 14rem 1rem 6rem;
+    margin: 1rem 6rem 1rem 6rem;
     padding: 2rem;
     text-align: justify;
     background-color: rgba(10, 140, 75, 0.5);
@@ -140,8 +142,10 @@ body {
 }
 
 model-viewer {
-  height: 300px;
-  width: auto;
+  width: 42vw;
+  height: 50vh;
+  margin: 1rem 6rem 1rem 6rem;
+  padding: 2rem;
 }
 
 .orchid-gallery {
@@ -152,7 +156,7 @@ model-viewer {
     align-self: center;
 }
 
-.about-section img {
+.orchid-card img {
   height: 300px;
   width: auto;
   margin: 1rem;
@@ -193,13 +197,19 @@ model-viewer {
         padding: 1rem;
         border-radius: 2rem;
     }
+    model-viewer {
+      width: 70vw;
+      height: 50vh;
+      margin: 1rem 1rem 1rem 1rem;
+      padding: 1rem;
+    }
     .orchid-gallery {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
   }
-  .about-section img {
-    width: 70vh;
+  .orchid-card img {
+    width: 70vw;
     height: auto;
 }
   }
@@ -226,13 +236,19 @@ model-viewer {
         padding: 1rem;
         border-radius: 2rem;
     }
+    model-viewer {
+      width: 80vw;
+      height: 50vh;
+      margin: 1rem 2rem 1rem 2rem;
+      padding: 1rem;
+    }
     .orchid-gallery {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
   }
-  .about-section img {
-  width: 70vh;
+  .orchid-card img {
+  width: 70vw;
   height: auto;
 }
   }
@@ -259,12 +275,18 @@ model-viewer {
         padding: 1rem;
         border-radius: 2rem;
     }
+    model-viewer {
+      width: 80vw;
+      height: 50vh;
+      margin: 1rem 2rem 1rem 2rem;
+      padding: 2rem;
+    }
     .orchid-gallery {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
   }
-  img {
+  .orchid-card img {
   width: auto;
   height: 50%;
 }
