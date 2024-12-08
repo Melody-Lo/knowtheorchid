@@ -176,6 +176,12 @@ model-viewer {
     color: white;
 }
 
+@media (max-width: 576px) {
+  .navbar h1 {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
 /* For small screens like phones */
 @media (max-width: 576px) {
     .hero {
