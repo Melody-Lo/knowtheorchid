@@ -152,7 +152,7 @@ model-viewer {
     align-self: center;
 }
 
-img {
+.about-section img {
   height: 300px;
   width: auto;
   margin: 1rem;
@@ -198,9 +198,9 @@ img {
       flex-direction: column;
       justify-content: space-between;
   }
-  img {
-  width: auto;
-  height: 20%;
+  .about-section img {
+    width: 70vh;
+    height: auto;
 }
   }
   
@@ -231,9 +231,9 @@ img {
       flex-direction: column;
       justify-content: space-between;
   }
-  img {
-  width: auto;
-  height: 35%;
+  .about-section img {
+  width: 70vh;
+  height: auto;
 }
   }
   
