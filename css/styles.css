@@ -197,14 +197,14 @@ model-viewer {
         margin: 1rem 1rem 1rem 1rem;
     }
     .orchid-text {
-      width: 70vw;
+      width: 80vw;
       height: auto;
         margin: 1rem 1rem 1rem 1rem;
         padding: 1rem;
         border-radius: 2rem;
     }
     model-viewer {
-      width: 70vw;
+      width: 80vw;
       height: 50vh;
       margin: 1rem 1rem 1rem 1rem;
       padding: 1rem;
